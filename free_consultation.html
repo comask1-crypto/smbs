@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>무료 견적 신청 | 중소기업경영지원센터</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 80px 16px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 24px;
+      text-align: center;
+      color: #0b3d91;
+    }
+    form {
+      background: #fff;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    label {
+      display: block;
+      margin-top: 16px;
+      font-weight: 600;
+      color: #333;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      background: #fafafa;
+    }
+    textarea { min-height: 100px; resize: vertical; }
+    .inline-group {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+    }
+    .inline-group label {
+      margin-right: 12px;
+      margin-top: 0;
+      font-weight: 400;
+    }
+    .submit-btn {
+      margin-top: 24px;
+      display: inline-block;
+      background: #f4b400;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .submit-btn:hover { opacity: 0.9; }
+    .back-link { display: block; margin-top: 20px; text-align: center; }
+    .back-link a { color: #0b3d91; text-decoration: none; }
+    .back-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>무료 견적 신청</h1>
+    <form action="https://formsubmit.co/comask1@naver.com" method="POST" enctype="multipart/form-data">
+      <!-- Hidden fields for formsubmit -->
+      <input type="hidden" name="_subject" value="태양광 임대 수익 무료 견적 신청">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="thank_you.html">
+      
+      <label for="name">이름</label>
+      <input type="text" id="name" name="이름" required>
+
+      <label for="phone">연락처</label>
+      <input type="tel" id="phone" name="연락처" placeholder="010-1234-5678" required>
+
+      <label for="email">이메일</label>
+      <input type="email" id="email" name="이메일" placeholder="example@example.com" required>
+
+      <label for="address">주소</label>
+      <input type="text" id="address" name="주소" placeholder="시/도 + 시/구" required>
+
+      <label for="addressDetail">상세 주소</label>
+      <input type="text" id="addressDetail" name="상세주소" placeholder="동/면/읍 등 상세 주소">
+
+      <label>지붕 유형</label>
+      <div class="inline-group">
+        <label><input type="radio" name="지붕유형" value="공장" required> 공장</label>
+        <label><input type="radio" name="지붕유형" value="건물" required> 건물</label>
+        <label><input type="radio" name="지붕유형" value="축사" required> 축사</label>
+      </div>
+
+      <label for="area">지붕 면적 (평)</label>
+      <input type="number" id="area" name="지붕면적" placeholder="예: 300" required>
+
+      <label>사업자 유형</label>
+      <div class="inline-group">
+        <label><input type="radio" name="사업자유형" value="개인사업자" required> 개인사업자</label>
+        <label><input type="radio" name="사업자유형" value="법인사업자" required> 법인사업자</label>
+      </div>
+
+      <label for="bizNumber">사업자번호</label>
+      <input type="text" id="bizNumber" name="사업자번호" placeholder="예: 123-45-67890" required>
+
+      <label for="message">기타 문의사항</label>
+      <textarea id="message" name="메시지" placeholder="특별 요청이나 문의사항을 적어주세요."></textarea>
+
+      <button type="submit" class="submit-btn">무료 견적 신청</button>
+    </form>
+    <div class="back-link"><a href="index.html">← 홈으로 돌아가기</a></div>
+  </div>
+</body>
+</html>
